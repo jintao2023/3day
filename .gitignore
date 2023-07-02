@@ -1,52 +1,19 @@
-# Prerequisites
-*.d
+#define _CRT_SECURE_NO_WARNINGS 1
+#include<stdio.h>
+int main()
+{
+	int ret = 0;
+	char mima[20] = { 0 };
+	printf("请输入密码:");
+	scanf("%s", mima);
+	getchar();
+	printf("确认密码Y/N:");
+	ret = getchar();
+	if (ret == 'Y')
+		printf("确认成功！");
+	else
+		printf("放弃确认！");
+		
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
-
-# Linker output
-*.ilk
-*.map
-*.exp
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
-
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+	return  0;
+}
